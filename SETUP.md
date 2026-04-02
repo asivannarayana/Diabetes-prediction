@@ -1,6 +1,6 @@
 Follow these steps to replicate the environment and run the project locally.
 
-1. Environment Setup
+1. Environment Setup 
 First, clone the repository and create a virtual environment to isolate the dependencies.
 
 DOS
