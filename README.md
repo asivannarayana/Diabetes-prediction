@@ -19,6 +19,8 @@ A production-ready Machine Learning service that predicts diabetes risk based on
    ```bash
    git clone [https://github.com/yourusername/diabetes-prediction-api.git](https://github.com/yourusername/diabetes-prediction-api.git)
    cd diabetes-prediction-api
+
+   **Follow SETUP.md for exection in Locally**
    
 **Phase 1: Environment & Dependency Management**
 The project began by isolating the development environment to ensure portability and avoid version conflicts.
