@@ -1,4 +1,4 @@
-# 🏥 Diabetes Prediction API
+# 🏥 Diabetes Prediction API 
 
 A production-ready Machine Learning service that predicts diabetes risk based on diagnostic measurements.
 
