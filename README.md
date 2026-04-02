@@ -37,15 +37,15 @@ joblib: For model serialization (saving the "brain").
 
 matplotlib & seaborn: For data visualization during the analysis phase.
 
-**Phase 2: Data Engineering & Cleaning
-**Raw medical data often contains noise. In the Pima Indians dataset, missing values were incorrectly recorded as 0 for biological markers like Glucose, Blood Pressure, and BMI.
+**Phase 2: Data Engineering & Cleaning**
+Raw medical data often contains noise. In the Pima Indians dataset, missing values were incorrectly recorded as 0 for biological markers like Glucose, Blood Pressure, and BMI.
 
 Imputation Strategy: I replaced these invalid zeros with NaN and applied Median Imputation. This prevents the model from being biased by "zero-value" outliers.
 
 Preprocessing Pipeline: Created data_prep.py to automate this cleaning, resulting in cleaned_diabetes.csv.
 
-**Phase 3: Machine Learning Pipeline
-**Using the cleaned data, I developed a robust training script (train_model.py):
+**Phase 3: Machine Learning Pipeline**
+Using the cleaned data, I developed a robust training script (train_model.py):
 
 Feature Scaling: Applied StandardScaler to ensure all inputs (like Age vs. Insulin) are on the same scale, which is critical for the Random Forest algorithm.
 
@@ -55,8 +55,8 @@ Validation: Split the data into 80% training and 20% testing, achieving an accur
 
 Persistence: Saved both the trained model.pkl and the scaler.pkl to the models/ directory.
 
-**Phase 4: API Development (Production Layer)
-**The final stage was transforming the static model into a live service using FastAPI.
+**Phase 4: API Development (Production Layer)**
+The final stage was transforming the static model into a live service using FastAPI.
 
 Schema Validation: Implemented Pydantic classes to strictly define the input data types, ensuring the API rejects invalid requests.
 
@@ -64,8 +64,8 @@ Inference Endpoint: Created a POST /predict route that accepts patient data, sca
 
 Documentation: Enabled FastAPI's automatic Swagger UI, allowing for interactive browser-based testing.
 
-**Phase 5: Version Control & DevOps
-**Git Integration: Initialized a local repository and managed changes through meaningful commits.
+**Phase 5: Version Control & DevOps** 
+Git Integration: Initialized a local repository and managed changes through meaningful commits.
 
 Project Structure: Followed industry standards by separating code (app/), data (data/), and serialized models (models/).
 
